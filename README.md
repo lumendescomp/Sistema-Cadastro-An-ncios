@@ -12,3 +12,9 @@ ostream &operator<<(ostream &os, const ANUNCIO &a)
     return os;
 }
 Ela serve para alterar o operador "<<" para que seja dado um output configurado pelo programador quando for solicitada a exibição de anúncios.  
+
+Os dados referentes ao anúncio são obtido através das funções:
+vti = valor total investido.
+qmviews = quantidade máxima de visualizaões.
+qmclick = quantidade máxima de cliques.
+qmcomp = quantidade máxima de compartilhamentos.
