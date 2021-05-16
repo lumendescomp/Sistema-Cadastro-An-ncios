@@ -57,8 +57,8 @@ int main()
             cin >> anuncio.data_inicio;
             cout << "Digite a data de término do anúncio:" << endl;
             cout << anuncio.data_fim;
-            cout << "Digite o investimento total:" << endl;
-            cin >> anuncio.investimento_total;
+            cout << "Digite o investimento por dia:" << endl;
+            cin >> anuncio.investimento_dia;
             anuncios.push_back(anuncio);
             break;
         }
