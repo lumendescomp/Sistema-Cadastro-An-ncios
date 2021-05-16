@@ -1,6 +1,6 @@
 # Sistema-Cadastro-Anuncios
 
-Para compilar o programa pelo cmd é necessário saber o caminho onde o arquivo foi salvo. Após entrar no diretório que o arquivo pertence é necessário usar o comando no terminal: 
+Para compilar o programa pelo cmd é necessário saber o caminho até onde o arquivo foi salvo e usar o comando: cd caminhoateoarquivo. Após entrar no diretório que o arquivo pertence é necessário usar o comando: 
 g++ nomedoarquivo.cpp -o nomequalquer
 Em "nomequalquer" você pode colocar o nome que quiser.
 Depois, é necessário utilizar o comando
