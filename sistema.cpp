@@ -20,12 +20,12 @@ class ANUNCIO
 {
 public:
     string nome_anuncio, nome_cliente, data_inicio, data_fim;
-    float investimento_total;
+    float investimento_dia;
 };
 
 ostream &operator<<(ostream &os, const ANUNCIO &a)
 {
-    os << "Valor total investido: " << a.investimento_total << endl;
+    os << "Valor total investido: " << vti(a) << endl;
     os << "Quantidade máxima de visualizações: " << qmviews(a) << endl;
     os << "Quantidade máxima de cliques: " << qmclick(a) << endl;
     os << "Quantidade máxima de compartilhamentos: " << qmcomp(a);
@@ -101,16 +101,36 @@ int main()
     return 0;
 }
 
+int vti(a)
+{
+    return (duranção do anúncio * investimento_dia)
+}
+
 int qmviews(ANUNCIO a)
 {
-    views_iniciais = a.investimento_total * 30;
+    int visualizacao_original_pessoas = valor_total_investido * 30;
+    float compartilhamentos = visualizacao_original_pessoas * 0.018;
+    float novas_visualizacoes;
+    float view_totais;
+
+    for (int i = 0; i < 4; i++)
+    {
+
+        novas_visualizacoes = compartilhamentos * 40;
+
+        compartilhamentos = novas_visualizacoes * 0.018;
+
+        view_totais += novas_visualizacoes;
+    }
+    return (int(view_totais + visualizacao_original_pessoas));
 }
 
 int qmclick(ANUNCIO a)
 {
-    return (a.investimento_total * 30;
+    return int((quantidade total de views * 0.12));
 }
 
 int qmcomp(ANUNCIO a)
 {
+    return (int(quantidade total de views * 0.018));
 }
