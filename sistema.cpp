@@ -100,7 +100,7 @@ int main()
     }
     return 0;
 }
-
+//Não consegui realizar as funções por conta da falta do intervalo de tempo, que eu não soube programar.
 int vti(a)
 {
     return (duranção do anúncio * investimento_dia)
